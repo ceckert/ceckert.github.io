@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
+import preact from '@astrojs/preact';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
@@ -27,6 +28,7 @@ export default defineConfig({
   site: 'https://ceckert.github.io',
 
   integrations: [
+    preact(),
     tailwind({
       applyBaseStyles: false,
     }),
